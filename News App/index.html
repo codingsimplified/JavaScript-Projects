@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NewsApp</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar container flex">
+            <div id="logo">
+                <a href="#">
+                    <img src="codingsimplified.PNG" >
+                </a>
+                <h1 id="header">codingsimplified</h1>
+            </div>
+            <div id="topics">
+                <ul>
+                    <li id="IPL"><a class="nav-item" href="#" id="ipl" onClick = "onNavItemCLick('ipl')">IPL</a></li>
+                    <li id="Finance"><a class="nav-item" href="#" id="finance" onClick = "onNavItemCLick('finance')">Finance</a></li>
+                    <li id="Politics"><a class="nav-item" href="#" id="politics" onClick = "onNavItemCLick('politics')">Politics</a></li>
+                    <li id="Technology"><a class="nav-item" href="#" id="technology" onClick = "onNavItemCLick('technology')">Technology</a></li>
+                </ul>
+            </div>
+            <div id="search">
+                <input id="searchInput" placeholder="e.g. Science">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+           
+            
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h2>
+                <h6 class="news-source" id="news-source">End Gadget 25/03/2024</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, eius? Eos inventore earum nesciunt ullam ipsa itaque cum, officiis, ut nihil non eligendi suscipit quo quos qui laboriosam pariatur dolorem.</p>
+            </div>
+        </div>
+    </template>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
