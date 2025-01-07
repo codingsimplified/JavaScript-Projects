@@ -8,7 +8,7 @@ const fileUploadButton = document.querySelector("#file-upload");
 const chatbotToggler = document.querySelector("#chatbot-toggle");
 const closeChatbot = document.querySelector("#close-chatbot");
 
-const API_KEY = "AIzaSyC6FrqS2bwgMM-6K4r9bbPQouxFTVcrhGE";
+const API_KEY = "";
 const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 
